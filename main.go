@@ -140,7 +140,7 @@ func main() {
 
 	 
 	app.Delete("/employee/:id", func(c *fiber.Ctx) error {
-		eployeeID, err := primitive.ObjectIDFromHex(c.Params("id"),)
+		employeeID, err := primitive.ObjectIDFromHex(c.Params("id"),)
 
 		if err != nil {
 			return c.SendStatus(400)
